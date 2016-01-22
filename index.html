@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="post" itemscope itemtype="http://schema.org/BlogPosting" >
+
+    {% for post in paginator.posts reversed %}
+
+    {% capture id %}{{ post.id | remove:'/' | downcase }}{% endcapture %}
+    <header class="post-header" id="{{id}}">
+      <h1 itemprop="name" class="post-title">
+        <a itemprop="url" class="post-link" href="#{{id}}">{{ post.title }}</a>
+      </h1>
+      </p>
+    </header>
+
+    <posticon>
+    <img src="{{ post.icon }}" width=110 height=175></a>
+    </posticon>
+    <article class="post-content" itemprop="articleBody">
+      {% if post.content contains site.excerpt_separator %}
+      {{ post.excerpt }}
+      <p style="text-align: right"><a href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
+      {% else %}
+      {{ post.content }}
+      {% endif %}
+    </article>
+    <hr />
+
+    {% endfor %}
+
+  </div>
+
+
+</div>

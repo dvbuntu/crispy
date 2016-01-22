@@ -1,0 +1,21 @@
+<header class="site-header">
+
+  <div class="wrapper">
+      <div class="trigger">
+        <a href="{{ site.baseurl }}">
+        <img src="images/clear.jpg" width="250" height="350" alt="Clear The Dragons!">
+        </a>
+        <nav class="site-nav">
+        {% for page in site.posts reversed %}
+        {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+        {% if page.icon %}
+        <a class="page-link" href="#{{ id }}">
+            <img src="{{ page.icon }}" width=110 height=175></a>
+        {% endif %}
+        {% endfor %}
+        </nav>
+      </div>
+
+  </div>
+
+</header>

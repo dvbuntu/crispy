@@ -1,0 +1,74 @@
+### Site info:
+title: Clear The Dragons!
+tagline: A card game by CrispyGamesCo
+author: Chris Pinyan
+email: clearthedragons@gmail.com
+description: "Clear The Dragons is a a card game by CrispyGamesCo." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
+keywords: "dragons, card game"
+baseurl: "/crispy" # the subpath of your site, e.g. /blog
+url: "http://dvbuntu.github.io/crispy" # the base hostname & protocol for your site
+locale: en_US
+
+### Personal info and site tools info:
+twitter_username: CrispyGamesCo
+#github_username:  yulijia
+#disqus_shortname: freshman21
+favicon:     "/images/favicon.ico"
+aboutme: Here at CrispyGamesCo, we make fun new card games! # these are shown on aboutme-sidebar.
+aboutme_photo: images/clear.jpg # your photo.
+google_analytics_key: UA-57362708-4 # put YOUR key here to enable tracking! (blank to disable)
+
+
+### Site setting:
+ShowContactInfo: "True" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown when ShowContactInfo == True
+default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
+default_locale: "en" # blog sidebar language set, only include: English(en) and Chinese (cn)
+
+locales:
+    en:
+      Aboutme: "Clear The Dragons!"
+      Archives: "Archives"
+      Blogroll: "Blogroll"
+      Categories: "Categories"
+      Copyright_Notice: "Copyright Notice"
+      Recent_Posts: "Recent Posts"
+      Tags: "Tags"
+      Previous: "Older"
+      Next: "Newer"
+      PostedInCategories: "Posted in"
+      Taggedwith: "and tagged"  
+      PostDate: "on "
+
+### your Blogroll info, only name can shown on the page.
+
+#Blogroll:
+#    - name: Freshman21
+#      href: http://yulijia.net/freshman21
+#      title: Another Jekyll blog theme
+#    - name: author's website
+#      href: http://yulijia.net/
+#      title: Lijia Yu's website
+
+
+### Build settings
+markdown: kramdown
+highlighter: pygments
+kramdown:
+        input: GFM
+        syntax_highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
+excerpt_separator: <!-- more -->
+
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#2987d9'
+  red:       '#cc0000'
+  green:     '#9bcf2f'
+  purple:    '#c869bf'
+  orange:    '#fab125'
+  turquoise: '#0fbfcf'
+
+
